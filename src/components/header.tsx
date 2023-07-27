@@ -27,7 +27,7 @@ export const navLinks = [
   },
 ];
 
-export default function header() {
+export default function Header() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <HStack alignItems="center" mt={5} maxW="4xl">

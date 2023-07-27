@@ -15,9 +15,9 @@ export default function Profile() {
           Hello, I Am Alexander Hung.
         </Heading>
         <Text mt="5" justifyItems="center" textAlign="justify">
-          I'm Graduate From Bina Nusantara University CS at 2022 🎓. I'm
+          I&#39;m a Graduate Of Bina Nusantara University CS in 2022 🎓. I&#39;m
           passionate about Web Development, with a particular focus on Backend
-          Engineering. Feel free to reach me out.
+          Engineering. Feel free to reach out.
         </Text>
         <HStack>
           <Button
