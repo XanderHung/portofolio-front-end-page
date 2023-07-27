@@ -4,7 +4,7 @@ import Head from "next/head";
 
 const stack = [
   {
-    title: "Languages",
+    title: "Programming Languages",
     badge: [
       {
         title: "C",
@@ -37,35 +37,89 @@ const stack = [
     ],
   },
   {
-    title: "Languages",
+    title: "Frontend",
     badge: [
       {
-        title: "C",
-        color: "green",
-      },
-      {
-        title: "C++",
-        color: "blue",
-      },
-      {
-        title: "GO",
+        title: "HTML",
         color: "red",
       },
       {
-        title: "PHP",
+        title: "Next.js",
+        color: "green",
+      },
+      {
+        title: "CSS",
+        color: "blue",
+      },
+      {
+        title: "Js",
         color: "yellow",
       },
       {
-        title: "R",
-        color: "cyan",
+        title: "React",
+        color: "blue",
       },
       {
-        title: "Java",
+        title: "Bootstrap",
         color: "purple",
       },
       {
-        title: "Javascript",
-        color: "gray",
+        title: "Chakra UI",
+        color: "teal",
+      },
+    ],
+  },
+  {
+    title: "Backend",
+    badge: [
+      {
+        title: "Laravel",
+        color: "red",
+      },
+      {
+        title: "Gin",
+        color: "blue",
+      },
+      {
+        title: "nodejs",
+        color: "green",
+      },
+      {
+        title: "Firebase",
+        color: "orange",
+      },
+      {
+        title: "Mongo DB",
+        color: "green",
+      },
+      {
+        title: "Postgresql",
+        color: "blue",
+      },
+      {
+        title: "mysql",
+        color: "blue",
+      },
+    ],
+  },
+  {
+    title: "Design",
+    badge: [
+      {
+        title: "Figma",
+        color: "pink",
+      },
+      {
+        title: "adobe XD",
+        color: "purple",
+      },
+      {
+        title: "visualPradigm",
+        color: "red",
+      },
+      {
+        title: "PhotoShop",
+        color: "blue",
       },
     ],
   },
@@ -73,98 +127,16 @@ const stack = [
     title: "Languages",
     badge: [
       {
-        title: "C",
-        color: "green",
+        title: "Bahasa Indonesia",
+        color: "gray",
       },
       {
-        title: "C++",
-        color: "blue",
-      },
-      {
-        title: "GO",
-        color: "red",
-      },
-      {
-        title: "PHP",
-        color: "yellow",
-      },
-      {
-        title: "R",
+        title: "English",
         color: "cyan",
       },
       {
-        title: "Java",
-        color: "purple",
-      },
-      {
-        title: "Javascript",
-        color: "gray",
-      },
-    ],
-  },
-  {
-    title: "Languages",
-    badge: [
-      {
-        title: "C",
-        color: "green",
-      },
-      {
-        title: "C++",
-        color: "blue",
-      },
-      {
-        title: "GO",
-        color: "red",
-      },
-      {
-        title: "PHP",
-        color: "yellow",
-      },
-      {
-        title: "R",
-        color: "cyan",
-      },
-      {
-        title: "Java",
-        color: "purple",
-      },
-      {
-        title: "Javascript",
-        color: "gray",
-      },
-    ],
-  },
-  {
-    title: "Languages",
-    badge: [
-      {
-        title: "C",
-        color: "green",
-      },
-      {
-        title: "C++",
-        color: "blue",
-      },
-      {
-        title: "GO",
-        color: "red",
-      },
-      {
-        title: "PHP",
-        color: "yellow",
-      },
-      {
-        title: "R",
-        color: "cyan",
-      },
-      {
-        title: "Java",
-        color: "purple",
-      },
-      {
-        title: "Javascript",
-        color: "gray",
+        title: "Mandarin",
+        color: "orange",
       },
     ],
   },

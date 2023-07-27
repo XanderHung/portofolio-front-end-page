@@ -25,8 +25,7 @@ export default function StackItemContent(props: Props) {
               rounded="md"
               fontWeight="semibold"
               colorScheme={badge.color}
-              p={1}
-              mx={1}
+              px={2}
             >
               {badge.title}
             </Badge>
