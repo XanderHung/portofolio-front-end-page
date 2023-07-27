@@ -1,5 +1,6 @@
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Button, HStack, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import Head from "next/head";
 
 export default function Profile() {
   return (

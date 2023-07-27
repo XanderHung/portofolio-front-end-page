@@ -6,8 +6,10 @@ import {
   Button,
   Center,
   Heading,
+  Stack,
   Text,
 } from "@chakra-ui/react";
+import Head from "next/head";
 import Link from "next/link";
 
 interface Props {
@@ -75,9 +77,14 @@ export default function ProjectContent(props: Props) {
   return (
     <>
       {slice == data.length ? (
-        <Heading fontSize="5xl" mb={3}>
-          Project
-        </Heading>
+        <Stack>
+          <Head>
+            <title>Project</title>
+          </Head>
+          <Heading fontSize="5xl" mb={3}>
+            Project
+          </Heading>
+        </Stack>
       ) : (
         <Heading>Favorite Project 💻</Heading>
       )}

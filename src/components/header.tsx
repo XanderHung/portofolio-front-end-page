@@ -10,6 +10,7 @@ import {
 import HeaderButton from "./header-button";
 import Link from "next/link";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import Head from "next/head";
 
 export const navLinks = [
   {
@@ -30,6 +31,9 @@ export default function header() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <HStack alignItems="center" mt={5} maxW="4xl">
+      <Head>
+        <link rel="icon" type="image/png" href="name.png" />
+      </Head>
       <Stack flex={1}>
         <Stack width={"fit-content"}>
           <Link href="/">

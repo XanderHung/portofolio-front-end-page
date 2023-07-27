@@ -1,5 +1,6 @@
 import { Heading, Stack, Text } from "@chakra-ui/react";
 import StackItemContent from "./stack-item-content";
+import Head from "next/head";
 
 const stack = [
   {
@@ -172,6 +173,9 @@ const stack = [
 export default function StackContent() {
   return (
     <Stack>
+      <Head>
+        <title>Stack</title>
+      </Head>
       <Heading fontSize="5xl" mb={3}>
         Stack
       </Heading>

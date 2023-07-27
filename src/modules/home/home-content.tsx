@@ -9,6 +9,7 @@ import { ArrowDownIcon } from "@chakra-ui/icons";
 import Profile from "./profile-content";
 import ProjectContent from "../project/project-content";
 import ExperienceContent from "./expreience-content";
+import Head from "next/head";
 
 export const ChakraIcon = createIcon({
   path: (
@@ -76,6 +77,9 @@ export default function HomeContent() {
   const fill = useColorModeValue("black", "white");
   return (
     <Stack>
+      <Head>
+        <title>Home</title>
+      </Head>
       <Profile />
       <Stack mt="16" alignItems="center">
         <Heading as="h2" fontSize="3xl">
