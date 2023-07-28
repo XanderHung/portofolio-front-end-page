@@ -43,6 +43,8 @@ export default function Card(props: Props) {
       overflow="hidden"
       p={{ base: 2, md: 5, sm: 4 }}
       mb={10}
+      display="flex"
+      flexDir="column"
     >
       <Image src={data.picture} maxH="200px" m="auto"></Image>
       <Box p={4}>
