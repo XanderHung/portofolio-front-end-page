@@ -1,4 +1,4 @@
-import { Footer, Header } from "@/components";
+import { Footer, Header } from "../components";
 import { ChakraProvider, Container, Stack } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { AppProps } from "next/app";

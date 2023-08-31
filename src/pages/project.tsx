@@ -1,4 +1,4 @@
-import ProjectContent from "@/modules/project/project-content";
+import ProjectContent from "../modules/project/project-content";
 
 export default function Page() {
   return <ProjectContent />;

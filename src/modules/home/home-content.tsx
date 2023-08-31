@@ -4,12 +4,16 @@ import {
   Stack,
   createIcon,
   useColorModeValue,
+  useToast,
 } from "@chakra-ui/react";
 import { ArrowDownIcon } from "@chakra-ui/icons";
 import Profile from "./profile-content";
 import ProjectContent from "../project/project-content";
 import ExperienceContent from "./expreience-content";
 import Head from "next/head";
+import { useEffect, useState } from "react";
+import ContactForm from "./contact-form";
+import ky from "ky";
 
 export const ChakraIcon = createIcon({
   path: (
@@ -43,37 +47,46 @@ export const GolangIcon = createIcon({
   ),
 });
 
-const testing = [
-  {
-    title: "SMA Sutomo 1 Medan",
-    description:
-      "It's a lot of fun to start high school. I majored in science and took part in a variety of activities, managing the organization, making friends, and having fun with friends after school.",
-    start: "2015",
-    end: "2018",
-    status: "Complete",
-    color: "green",
-  },
-  {
-    title: "Bina Nusantara University",
-    description:
-      "I learned a lot at Bina Nusantara University (BINUS), beginning with the first year program, making friends, organizing between students, and working on joint projects. I also like the Binus neighborhood because there are many food vendors there.",
-    start: "2018",
-    end: "2022",
-    status: "Complete",
-    color: "green",
-  },
-  {
-    title: "Cv. Solusi Kreasi Global",
-    description:
-      "At CV. Solusi Kreasi Global (Springkraf), I learn a lot about backend engineering and some front end, and I'm grateful that i could working here. Also, kudos to my manager (Mr. Denny, Mr. Jemmy, Mr. Erwin) for helping me and all my friend",
-    start: "2022",
-    end: "Current",
-    status: "Ongoing",
-    color: "gray",
-  },
-];
+interface Model {
+  title: string;
+  description: string;
+  start: string;
+  end: string;
+  status: string;
+  color: string;
+}
 
 export default function HomeContent() {
+  const toast = useToast();
+  const [study, setStudy] = useState<Model[]>([
+    { title: "", description: "", start: "", end: "", status: "", color: "" },
+  ]);
+  useEffect(() => {
+    async function exec() {
+      try {
+        const headers = new Headers();
+        headers.append("Content-Type", "application/json");
+
+        const result = await ky.get(
+          `${process.env.SERVER_ADDRESS}/experiences`
+        );
+        const json = (await result.json()) as Model[];
+        setStudy(json);
+      } catch (e: any) {
+        const res = await e.response?.json();
+        toast({
+          title: "error",
+          description: res?.message,
+          position: "top-right",
+          status: "error",
+          duration: 900,
+          isClosable: true,
+        });
+        setStudy([]);
+      }
+    }
+    exec();
+  }, []);
   const fill = useColorModeValue("black", "white");
   return (
     <Stack>
@@ -136,8 +149,8 @@ export default function HomeContent() {
       <Stack id="project">
         <ProjectContent slice={4} />
       </Stack>
-      <ExperienceContent data={testing} />
-      {/* <ContactForm /> */}
+      {study.length > 0 ? <ExperienceContent data={study} /> : <></>}
+      <ContactForm />
     </Stack>
   );
 }
