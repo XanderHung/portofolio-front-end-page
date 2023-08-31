@@ -3,4 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-module.exports = nextConfig;
+module.exports = {
+  env: {
+    SERVER_ADDRESS: process.env.SERVER_ADDRESS,
+  },
+};
