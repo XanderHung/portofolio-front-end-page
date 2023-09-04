@@ -57,7 +57,7 @@ export default function Card(props: Props) {
           </Badge>
         </Box>
       </Box>
-      <Box px={4} lineHeight="tight" noOfLines={3} textAlign="justify">
+      <Box px={4} lineHeight="tight" noOfLines={3}>
         <Text>{data.description}</Text>
       </Box>
       <Box display="flex" pt={2}>
