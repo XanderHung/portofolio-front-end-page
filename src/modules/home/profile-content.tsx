@@ -14,7 +14,7 @@ export default function Profile() {
         <Heading as="h1" fontSize={{ base: "2xl", md: "3xl" }}>
           Hello, I Am Alexander Hung.
         </Heading>
-        <Text mt="5" justifyItems="center" textAlign="justify">
+        <Text mt="5" mb="3" justifyItems="center" textAlign="justify">
           I&#39;m a Graduate Of Bina Nusantara University CS in 2022 🎓. I&#39;m
           passionate about Web Development, with a particular focus on Backend
           Engineering. Feel free to reach out.
@@ -23,6 +23,7 @@ export default function Profile() {
           <Button
             as="a"
             target="_blank"
+            mr="2"
             href="Profile.pdf"
             rightIcon={<ChevronRightIcon />}
           >

@@ -14,7 +14,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import ky from "ky";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useForm } from "react-hook-form";
 
 export default function ContactForm() {

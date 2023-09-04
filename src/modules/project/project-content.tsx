@@ -69,7 +69,7 @@ export default function ProjectContent(props: Props) {
               </Heading>
             </Stack>
           ) : (
-            <Heading>Favorite Project 💻</Heading>
+            <Heading>My Project 💻</Heading>
           )}
           <Box
             display="flex"

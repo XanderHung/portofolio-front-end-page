@@ -96,40 +96,40 @@ export default function HomeContent() {
       <Profile />
       <Stack mt="16" alignItems="center">
         <Heading as="h2" fontSize="3xl">
-          Current Favorite Tech Stack:
+          My Current Tech Stack:
         </Heading>
         <Stack display="flex" flexDir="row" mt={5}>
           <ChakraIcon
             fill={fill}
             w={{ base: 8, md: 14 }}
             h={{ base: 8, md: 14 }}
-            m={1}
+            m={2}
             _hover={{ fill: "teal.400" }}
           />
           <NextJsIcon
             fill={fill}
             w={{ base: 8, md: 14 }}
             h={{ base: 8, md: 14 }}
-            m={1}
+            m={2}
           />
           <LaravelIcon
             fill={fill}
             w={{ base: 8, md: 14 }}
             h={{ base: 8, md: 14 }}
-            m={1}
+            m={2}
             _hover={{ fill: "red" }}
           />
           <PostgersIcon
             fill={fill}
             w={{ base: 8, md: 14 }}
             h={{ base: 8, md: 14 }}
-            m={1}
+            m={2}
           />
           <GolangIcon
             fill={fill}
             w={{ base: 10, md: 16 }}
             h={{ base: 8, md: 14 }}
-            m={1}
+            m={2}
             _hover={{ fill: "cyan.300" }}
           />
         </Stack>
