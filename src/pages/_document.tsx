@@ -4,7 +4,7 @@ import theme from "../theme";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en" style={{ scrollBehavior: "smooth" }}>
       <Head />
       <body>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
